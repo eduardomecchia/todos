@@ -12,10 +12,23 @@ import Button from "./components/Button";
 
 export default {
   name: 'App',
+
   components: {
     Header,
     AddTask,
     Button
+  },
+
+  data() {
+      return {
+          tasks: []
+      }
+  },
+
+  created() {
+      this.tasks = [
+          
+      ];
   }
 }
 </script>

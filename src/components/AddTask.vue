@@ -1,7 +1,7 @@
 <template>
     <div>
         <input type="text" name="task" id="task">
-        <Button text="Add" color="green"></Button>
+        <Button text="Add" color="lightgreen"></Button>
     </div>
 </template>
 
@@ -10,6 +10,7 @@ import Button from "./Button"
 
 export default {
     name: "AddTask",
+    
     components: {
         Button
     }
