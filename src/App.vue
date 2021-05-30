@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header />
-    <AddTask />
+    <Header title="Task tracker"></Header>
+    <AddTask></AddTask>
   </div>
 </template>
 
