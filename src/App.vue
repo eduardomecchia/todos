@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <h1>Hello World</h1>
+    <Header />
+    <AddTask />
   </div>
 </template>
 
 <script>
+import Header from "./components/Header";
+import AddTask from "./components/AddTask";
 
 export default {
   name: 'App',
   components: {
+    Header,
+    AddTask,
   }
 }
 </script>
