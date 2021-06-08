@@ -1,16 +1,17 @@
 <template>
     <div>
         <input type="text" name="task" id="task">
-        <Button text="Add" color="lightgreen"></Button>
+        <Button text="Add Task" color="purple"></Button>
     </div>
 </template>
 
 <script>
-import Button from "./Button"
+
+import Button from "./Button";
 
 export default {
     name: "AddTask",
-    
+
     components: {
         Button
     }

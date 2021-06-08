@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header title="Task tracker"></Header>
+    <Header title="Eduardo's Task Tracker!" color="white" background="red"></Header>
     <AddTask></AddTask>
   </div>
 </template>
@@ -8,7 +8,6 @@
 <script>
 import Header from "./components/Header";
 import AddTask from "./components/AddTask";
-import Button from "./components/Button";
 import Tasks from "./components/Tasks";
 
 export default {
@@ -17,7 +16,6 @@ export default {
   components: {
     Header,
     AddTask,
-    Button,
     Tasks
   },
 

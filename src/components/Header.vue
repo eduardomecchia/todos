@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <h1>{{ title }}</h1>
+    <header :style="{ background: background }">
+        <h1 :style="{ color: color }">{{ title }}</h1>
     </header>
 </template>
 
@@ -9,7 +9,9 @@ export default {
     name: "Header",
     
     props: {
-        title: String
+        title: String,
+        color: String,
+        background: String
     }
 }
 </script>
