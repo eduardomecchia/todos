@@ -42,6 +42,12 @@ export default {
      * @param {object} task - The task object that is built in AddTask component
      */
     addTask(task) {
+      // Validate task creation, rejecting empty names
+      if (!task.text) {
+        alert("The task you're trying to create has an empty name");
+        return
+      }
+
       this.tasks.push(task);
     }
   },
