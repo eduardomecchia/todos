@@ -3,6 +3,7 @@
     <Header title="Eduardo's Task Tracker"></Header>
     <AddTask @add-task="addTask"></AddTask>
     <Tasks @delete-task="deleteTask" :tasks="tasks"></Tasks>
+    <div v-if="tasks.length === 0">Congratulations! You completed all of your tasks.</div>
   </div>
 </template>
 
