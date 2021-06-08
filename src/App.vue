@@ -4,6 +4,7 @@
     <AddTask @add-task="addTask"></AddTask>
     <Tasks @delete-task="deleteTask" :tasks="tasks"></Tasks>
     <div v-if="tasks.length === 0">Congratulations! You completed all of your tasks.</div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Header from "./components/Header";
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
+import Footer from "./components/Footer";
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
   components: {
     Header,
     AddTask,
-    Tasks
+    Tasks,
+    Footer
   },
 
   data() {
@@ -76,6 +79,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

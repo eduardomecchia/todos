@@ -11,9 +11,6 @@ export default {
 
     props: {
         task: Object
-    },
-
-    methods: {
     }
 }
 </script>
