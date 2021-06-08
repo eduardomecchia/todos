@@ -19,7 +19,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: lavender;
+        background-color: #9c90c086;
         border: 1px solid #cecedf;
     }
 </style>

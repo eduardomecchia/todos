@@ -79,12 +79,25 @@ export default {
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+a {
+  color: #c3e4d6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active, a:visited:active {
+  color: red;
+}
+a:visited {
+  color: #5094a7;
 }
 </style>

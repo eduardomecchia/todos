@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
     div {
-        background-color: lavender;
+        background-color: #9c90c086;
         border: 1px solid #cecedf;
         padding: 10px;
         display: flex;
