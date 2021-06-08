@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="text" name="task" id="task" v-model="text" placeholder="The name of the task goes here">
+        <input type="text" name="task" id="task" @keyup.enter="buildTask" v-model="text" placeholder="The name of the task goes here">
         <Button @add-task="buildTask" text="Add Task" color="purple"></Button>
     </div>
 </template>
