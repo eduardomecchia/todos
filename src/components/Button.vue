@@ -16,10 +16,12 @@ export default {
 <style scoped>
     button {
         display: inline-block;
-        background: #000;
         color: #fff;
         font-weight: bold;
-        border: none;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 2px solid rgb(93, 93, 93);
+        border-right: 2px solid rgb(93, 93, 93);
         padding: 10px 20px;
         margin: 5px;
         border-radius: 5px;
@@ -27,15 +29,15 @@ export default {
         text-decoration: none;
         font-size: 15px;
         font-family: inherit;
-        transition: 0.1s;
+        transition: 0.2s;
     }
     button:hover {
-        box-shadow: 1px 1px 1px #75b999;
+        box-shadow: 4px 4px 10px rgb(46 46 46);
     }
     button:focus {
         outline: none;
     }
     button:active {
-        transform: scale(0.95);
+        transform: scale(0.90);
     }
 </style>
