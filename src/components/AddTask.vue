@@ -49,6 +49,7 @@ export default {
         align-items: center;
         padding: 10px;
         background-color: lavenderblush;
+        border: 1px solid pink;
     }
 
     input {
