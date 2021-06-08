@@ -8,6 +8,8 @@
 <script>
 
 import Button from "./Button";
+const dayjs = require('dayjs');
+
 
 export default {
     name: "AddTask",
@@ -24,12 +26,15 @@ export default {
 
     methods: {
         /**
-         * Builds a new task object with text that is the same as the input field
+         * Builds a new task object with text that is the same as the input field and the current date parsed with day.js
          */
         buildTask() {
+            const currentDay = dayjs().format("DD/MM/YY");
+            const currentHour = dayjs().format("hh:mm");
+
             const newTask = {
                 text: this.text,
-                day: "05/12/12 at 00:00",
+                date: `${currentDay} at ${currentHour}`,
                 id: ""
             }
 
