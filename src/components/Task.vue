@@ -33,6 +33,8 @@ export default {
     }
 
     i {
+        font-size: 30px;
         color: red;
+        cursor: pointer;
     }
 </style>
