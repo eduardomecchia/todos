@@ -52,6 +52,8 @@ export default {
         return
       }
 
+      task.id = this.tasks.length;
+
       this.tasks.push(task);
     }
   },

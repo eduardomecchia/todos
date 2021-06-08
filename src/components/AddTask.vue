@@ -30,7 +30,7 @@ export default {
             const newTask = {
                 text: this.text,
                 day: "05/12/12 at 00:00",
-                id: Math.floor(Math.random() * 10000)
+                id: ""
             }
 
             this.$emit("add-task", newTask);
