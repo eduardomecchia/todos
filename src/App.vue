@@ -9,6 +9,7 @@
 import Header from "./components/Header";
 import AddTask from "./components/AddTask";
 import Button from "./components/Button";
+import Tasks from "./components/Tasks";
 
 export default {
   name: 'App',
@@ -16,7 +17,8 @@ export default {
   components: {
     Header,
     AddTask,
-    Button
+    Button,
+    Tasks
   },
 
   data() {

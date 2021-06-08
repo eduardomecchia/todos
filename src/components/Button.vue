@@ -1,5 +1,5 @@
 <template>
-    <button @click="addTask()" :style="{ background: color }">{{ text }}</button>
+    <button class="btn" @click="addTask()">{{ text }}</button>
 </template>
 
 <script>
@@ -21,12 +21,22 @@ export default {
 
 <style scoped>
     button {
-        padding: 5px 25px;
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
         border-radius: 5px;
-        background-color: color;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: inherit;
     }
-
-    button:focus-visible {
-        outline: 0;
+    button:focus {
+        outline: none;
+    }
+    button:active {
+        transform: scale(0.98);
     }
 </style>
