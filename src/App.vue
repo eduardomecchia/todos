@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header title="Eduardo's Task Tracker"></Header>
-    <AddTask></AddTask>
+    <AddTask @add-task="addTask"></AddTask>
     <Tasks @delete-task="deleteTask" :tasks="tasks"></Tasks>
   </div>
 </template>
@@ -35,6 +35,14 @@ export default {
       if (confirm("Are you sure you want to delete this task?")) {
         this.tasks = this.tasks.filter(task => task.id !== id);
       }
+    },
+
+    /**
+     * Add a new task to the app
+     * @param {object} task - The task object that is built in AddTask component
+     */
+    addTask(task) {
+      this.tasks.push(task);
     }
   },
 
