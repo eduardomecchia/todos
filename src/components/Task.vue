@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2>{{ task.text }}</h2>
+        <span>Added on {{ task.date }}</span>
         <i @click="$emit('delete-task', task.id)" class="fas fa-times"></i>
     </div>
 </template>
