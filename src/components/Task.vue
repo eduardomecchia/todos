@@ -15,5 +15,16 @@ export default {
 </script>
 
 <style scoped>
+    div {
+        background-color: lavender;
+        border: 1px solid #cecedf;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    h2 {
+        margin: 0;
+    }
 </style>
