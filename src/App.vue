@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header title="Eduardo's Task Tracker!" color="white" background="red"></Header>
+    <Header title="Eduardo's Task Tracker"></Header>
     <AddTask></AddTask>
     <Tasks :tasks="tasks"></Tasks>
   </div>

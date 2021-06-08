@@ -23,6 +23,8 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        background-color: lavenderblush;
     }
 
     input {
