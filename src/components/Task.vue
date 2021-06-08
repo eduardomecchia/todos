@@ -1,15 +1,19 @@
 <template>
     <div>
         <h2>{{ task.text }}</h2>
-        <i class="fas fa-times"></i>
+        <i @click="$emit('delete-task', task.id)" class="fas fa-times"></i>
     </div>
 </template>
 
 <script>
 export default {
     name: "Task",
+
     props: {
         task: Object
+    },
+
+    methods: {
     }
 }
 </script>
@@ -26,5 +30,9 @@ export default {
 
     h2 {
         margin: 0;
+    }
+
+    i {
+        color: red;
     }
 </style>

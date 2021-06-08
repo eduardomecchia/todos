@@ -2,7 +2,7 @@
   <div id="app">
     <Header title="Eduardo's Task Tracker"></Header>
     <AddTask></AddTask>
-    <Tasks :tasks="tasks"></Tasks>
+    <Tasks @delete-task="deleteTask" :tasks="tasks"></Tasks>
   </div>
 </template>
 
@@ -24,6 +24,18 @@ export default {
       return {
           tasks: []
       }
+  },
+
+  methods: {
+    /**
+     * Filter the tasks array, returning everything BUT the task that the user wants to delete
+     * @param {string} id - ID pointing to desired task
+     */
+    deleteTask(id) {
+      if (confirm("Are you sure you want to delete this task?")) {
+        this.tasks = this.tasks.filter(task => task.id !== id);
+      }
+    }
   },
 
   created() {
