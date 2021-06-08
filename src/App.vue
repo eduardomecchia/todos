@@ -2,6 +2,7 @@
   <div id="app">
     <Header title="Eduardo's Task Tracker!" color="white" background="red"></Header>
     <AddTask></AddTask>
+    <Tasks></Tasks>
   </div>
 </template>
 
