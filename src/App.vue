@@ -28,7 +28,21 @@ export default {
 
   created() {
       this.tasks = [
-          
+          {
+            text: "Code",
+            id: 0,
+            date: "08/06/21 at 15:00"
+          },
+          {
+            text: "Eat",
+            id: 1,
+            date: "08/06/21 at 17:00"
+          },
+          {
+            text: "Sleep",
+            id: 2,
+            date: "08/06/21 at 19:00"
+          }
       ];
   }
 }
