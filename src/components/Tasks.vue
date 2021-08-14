@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tasks">
     <div class="task-container" :key="task.id" v-for="task in tasks">
         <Task @delete-task="$emit('delete-task', task.id)" :task="task"></Task>
     </div>
