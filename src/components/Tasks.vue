@@ -23,3 +23,10 @@ export default {
     emits: ["delete-task"]
 }
 </script>
+
+<style scoped>
+  .tasks {
+    height: 75%;
+    background-color: #d4d4f6;
+  }
+</style>

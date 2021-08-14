@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
     .task {
-        background-color: #9c90c086;
+        background-color: #c8bee2;
         border: 1px solid #cecedf;
         padding: 10px;
         display: flex;
