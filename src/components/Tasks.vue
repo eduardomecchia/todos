@@ -26,6 +26,7 @@ export default {
 
 <style scoped>
   .tasks {
+    overflow-y: scroll;
     height: 75%;
     background-color: #d4d4f6;
   }
